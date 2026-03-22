@@ -1,0 +1,22 @@
+{
+	"name": "data_dictionary",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GithubFilesService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "raia5950/azure-cu-project-raw-data/main/data_dictionary.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
