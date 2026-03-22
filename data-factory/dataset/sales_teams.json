@@ -1,0 +1,22 @@
+{
+	"name": "sales_teams",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GithubFilesService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "raia5950/azure-cu-project-raw-data/main/sales_teams.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
